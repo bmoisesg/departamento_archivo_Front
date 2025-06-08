@@ -74,11 +74,23 @@ function IngresarArchivoScreen() {
     };
 
     return (
+       <div  style={{
+                position: 'absolute',
+                top: 100,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url("/mp2.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',                
+            }}>
+
         <div className='divespecial'>
             <h1>Ingresar archivo</h1>
 
             <h3>Título *</h3>
-            <input id='miTitulo' />
+            <input id='miTitulo' maxLength="100"/>
 
             <h3>Tipo de archivo *</h3>
             <select id='miIdTipo' onChange={manejarCambio} >
@@ -91,11 +103,12 @@ function IngresarArchivoScreen() {
             </select>
 
             <h3>Fiscal que ingresa (dpi)</h3>
-            <input id='miFiscal' />
+            <input id='miFiscal'  maxLength="15"/>
 
             <br /><br />
             <button className="boton-estandar" onClick={manejarClick}>Ingresar</button>
         </div>
+       </div>
     );
 }
 

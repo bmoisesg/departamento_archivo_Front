@@ -43,7 +43,17 @@ function RegresarArchivo() {
     };
 
     return (
-        <>
+        <div  style={{
+                position: 'absolute',
+                top: 100,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url("/mp2.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',                
+            }}>
 
             <div className='divespecial'>
                 <h1>Regresar Archivo</h1>
@@ -62,14 +72,15 @@ function RegresarArchivo() {
                         border: '1px solid #ccc',
                         resize: 'vertical' 
                     }}
+                    maxLength="200"
                 ></textarea>   
                 <h3>Fiscal (dpi)</h3>
-                <input id='miMotivo'></input>
+                <input></input>
                 <br />
                 <br />
                 <button className="boton-estandar" onClick={fntRegresar}>Confirmo regreso</button>
             </div>
-        </>
+        </div>
     );
 }
 

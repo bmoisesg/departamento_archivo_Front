@@ -70,7 +70,7 @@ function InicioPantalla() {
                     }}>
                         <button style={buttonStyle} onClick={() => navigate('/IngresarArchivo')} >Ingresar archivo</button>
                         <button style={buttonStyle} onClick={() => navigate('/GestinarArchivo')} >Gestionar archivos</button>
-                        <button style={buttonStyle}>Ver reporte de archivos</button>
+                        <button style={buttonStyle} onClick={() => navigate('/Reporte')}>Ver reporte de archivos</button>
                     </div>
                 </div>
             </div>

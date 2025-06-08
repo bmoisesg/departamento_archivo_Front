@@ -9,6 +9,8 @@ import InfoArchivo from './components/screen/infoArchivo';
 import PrestarArchivo from './components/screen/prestarArchivo';
 import RegresarArchivo from './components/screen/regresarArchivo';
 import EgresarArchivo from './components/screen/egresarArchivo';
+import Reporte from './components/screen/reporte';
+import PaginaNoEncontrada from './components/screen/errorScreen';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/PrestarArchivo" element={<PrestarArchivo/>} />
         <Route path="/RegresarArchivo" element={<RegresarArchivo/>} />
         <Route path="/EgresarArchivo" element={<EgresarArchivo/>} />
+        <Route path="/Reporte" element={<Reporte/>} />
+        <Route path="*" element={<PaginaNoEncontrada />} />
       </Routes>
     </div>
 
