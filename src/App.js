@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Panel from './components/navbar'
+import InicioPantalla from './components/screen/principal';
+import IngresarArchivoScreen from './components/screen/ingresarArchivo';
+import GestionarArchivo from './components/screen/gestionarArchivo';
+import InfoArchivo from './components/screen/infoArchivo';
+import PrestarArchivo from './components/screen/prestarArchivo';
+import RegresarArchivo from './components/screen/regresarArchivo';
+import EgresarArchivo from './components/screen/egresarArchivo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Panel></Panel>
+    <Routes>
+        <Route path="/" element={<InicioPantalla/>} />
+        <Route path="/IngresarArchivo" element={<IngresarArchivoScreen/>} />
+        <Route path="/GestinarArchivo" element={<GestionarArchivo/>} />
+        <Route path="/InfoArchivo" element={<InfoArchivo/>} />
+        <Route path="/PrestarArchivo" element={<PrestarArchivo/>} />
+        <Route path="/RegresarArchivo" element={<RegresarArchivo/>} />
+        <Route path="/EgresarArchivo" element={<EgresarArchivo/>} />
+      </Routes>
     </div>
+
   );
 }
+
 
 export default App;
