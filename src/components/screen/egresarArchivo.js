@@ -46,7 +46,17 @@ function EgresarArchivo() {
     };
 
     return (
-        <>
+         <div  style={{
+                position: 'absolute',
+                top: 100,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url("/mp2.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',                
+            }}>
 
             <div className='divespecial'>
                 <h1>Egresar Archivo</h1>
@@ -73,7 +83,7 @@ function EgresarArchivo() {
                 <br />
                 <button className="boton-estandar" onClick={fntEgresarHistorial}>Confirmo, que quiero egresarlo</button>
             </div>
-        </>
+        </div>
     );
 }
 

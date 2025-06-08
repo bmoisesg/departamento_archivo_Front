@@ -74,6 +74,18 @@ function IngresarArchivoScreen() {
     };
 
     return (
+       <div  style={{
+                position: 'absolute',
+                top: 100,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url("/mp2.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',                
+            }}>
+
         <div className='divespecial'>
             <h1>Ingresar archivo</h1>
 
@@ -96,6 +108,7 @@ function IngresarArchivoScreen() {
             <br /><br />
             <button className="boton-estandar" onClick={manejarClick}>Ingresar</button>
         </div>
+       </div>
     );
 }
 

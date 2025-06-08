@@ -42,8 +42,18 @@ function PrestarArchivo() {
     };
 
     return (
-        <>
-
+        <div  style={{
+                position: 'absolute',
+                top: 100,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url("/mp2.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',                
+            }}>
+            
             <div className='divespecial'>
                 <h1>Prestar Archivo</h1>
 
@@ -69,7 +79,7 @@ function PrestarArchivo() {
                 <br />
                 <button className="boton-estandar" onClick={fntIngresarHistorial}>Si, quiero prestar archivo</button>
             </div>
-        </>
+        </div>
     );
 }
 
