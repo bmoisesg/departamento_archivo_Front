@@ -61,7 +61,10 @@ function PrestarArchivo() {
                         border: '1px solid #ccc',
                         resize: 'vertical' 
                     }}
-                ></textarea>                
+                    maxLength="200"
+                ></textarea>         
+                <h3>Fiscal (dpi)</h3>
+                <input></input>       
                 <br />
                 <br />
                 <button className="boton-estandar" onClick={fntIngresarHistorial}>Si, quiero prestar archivo</button>

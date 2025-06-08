@@ -62,9 +62,10 @@ function RegresarArchivo() {
                         border: '1px solid #ccc',
                         resize: 'vertical' 
                     }}
+                    maxLength="200"
                 ></textarea>   
                 <h3>Fiscal (dpi)</h3>
-                <input id='miMotivo'></input>
+                <input></input>
                 <br />
                 <br />
                 <button className="boton-estandar" onClick={fntRegresar}>Confirmo regreso</button>

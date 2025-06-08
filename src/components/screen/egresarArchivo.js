@@ -65,7 +65,10 @@ function EgresarArchivo() {
                         border: '1px solid #ccc',
                         resize: 'vertical' 
                     }}
+                    maxLength="200"
                 ></textarea>   
+                <h3>Fiscal (dpi)</h3>
+                <input></input>
                 <br />
                 <br />
                 <button className="boton-estandar" onClick={fntEgresarHistorial}>Confirmo, que quiero egresarlo</button>
