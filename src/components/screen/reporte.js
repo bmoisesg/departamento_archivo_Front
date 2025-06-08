@@ -10,7 +10,7 @@ function Reporte() {
     }, []);
 
     const obtenerReporte1 = () => {
-        fetch("http://localhost:8080/reporte1", {
+        fetch("http://localhost:8080/reporte/1", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function Reporte() {
     };
 
     const obtenerReporte2 = () => {
-        fetch("http://localhost:8080/reporte2", {
+        fetch("http://localhost:8080/reporte/2", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
